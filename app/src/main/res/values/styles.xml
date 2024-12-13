@@ -2,7 +2,7 @@
 <resources>
 
     <style name="StyleTitle14" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/style_title_14_text_size</item>
         <item name="android:fontFamily">@font/montserrat_alternates</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/button_text_color</item>
@@ -10,11 +10,11 @@
     </style>
 
     <style name="StyleNavButton" parent="Widget.Material3.Button">
-        <item name="android:layout_width">162dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">@style/StyleTitle14</item>
         <item name="autoSizeTextType">uniform</item>
-        <item name="cornerRadius">8dp</item>
+        <item name="cornerRadius">@dimen/nav_button_corner_radius</item>
     </style>
 
 </resources>
