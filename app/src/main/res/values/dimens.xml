@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Text        -->
+    <dimen name="style_title_14_text_size">14sp</dimen>
+
+    <!--    Button      -->
+    <dimen name="button_indent">4dp</dimen>
+    <dimen name="half_button_indent">2dp</dimen>
+    <dimen name="nav_button_corner_radius">8dp</dimen>
+
+    <!--    Button container    -->
+    <dimen name="buttons_container_width">328dp</dimen>
+    <dimen name="buttons_container_height">36dp</dimen>
+    <dimen name="buttons_container_indent">16dp</dimen>
+    <dimen name="buttons_container_bottom_indent">8dp</dimen>
+
+</resources>
