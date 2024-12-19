@@ -8,4 +8,5 @@
     <color name="favorite_button_color">#E13E3E</color>
     <color name="navigation_bar_color">#F4FAFF</color>
     <color name="status_bar_color">#F4FAFF</color>
+    <color name="fragment_list_categories_bg_color">#F4FAFF</color>
 </resources>
