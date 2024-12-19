@@ -8,8 +8,18 @@
     android:background="@color/background_main_layout"
     tools:context=".MainActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_container_height"
+        android:layout_marginBottom="@dimen/main_container_margin_bottom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"/>
 
     <LinearLayout
+        android:id="@+id/buttonContainer"
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttons_container_height"
         android:layout_marginHorizontal="@dimen/buttons_container_indent"
