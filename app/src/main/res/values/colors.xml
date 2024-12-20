@@ -9,4 +9,5 @@
     <color name="navigation_bar_color">#F4FAFF</color>
     <color name="status_bar_color">#F4FAFF</color>
     <color name="fragment_list_categories_bg_color">#F4FAFF</color>
+    <color name="fragment_favourites_bg_color">#F4FAFF</color>
 </resources>
