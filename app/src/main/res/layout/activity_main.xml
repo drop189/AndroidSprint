@@ -13,10 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/main_container_height"
         android:layout_marginBottom="@dimen/main_container_margin_bottom"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonContainer"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/buttonContainer"
@@ -30,18 +30,20 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/category_button"
             style="@style/StyleNavButton"
             android:layout_marginEnd="@dimen/half_button_indent"
             android:layout_weight="1"
             android:backgroundTint="@color/category_button_color"
-            android:text="@string/navigation_bar_text" />
+            android:text="@string/category_button_text" />
 
         <Button
+            android:id="@+id/favorite_button"
             style="@style/StyleNavButton"
             android:layout_marginStart="@dimen/half_button_indent"
             android:layout_weight="1"
             android:backgroundTint="@color/favorite_button_color"
-            android:text="@string/status_bar_text"
+            android:text="@string/favorite_button_text"
             app:icon="@drawable/ic_heart_empty"
             app:iconGravity="textEnd" />
 
