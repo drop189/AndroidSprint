@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="bottom_indent_8dp">8dp</dimen>
+
     <!--    Text        -->
     <dimen name="style_title_14_text_size">14sp</dimen>
 
@@ -12,6 +15,7 @@
     <dimen name="buttons_container_width">328dp</dimen>
     <dimen name="buttons_container_height">36dp</dimen>
     <dimen name="buttons_container_indent">16dp</dimen>
-    <dimen name="buttons_container_bottom_indent">8dp</dimen>
 
+    <!--    Main container    -->
+    <dimen name="main_container_height">0dp</dimen>
 </resources>
