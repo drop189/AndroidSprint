@@ -6,7 +6,7 @@
     </style>
 
     <style name="Theme.AndroidSprint" parent="Base.Theme.AndroidSprint">
-        <item name="android:statusBarColor">@color/status_bar_color</item>
-        <item name="android:navigationBarColor">@color/navigation_bar_color</item>
+        <item name="android:statusBarColor">@color/color_surface_main</item>
+        <item name="android:navigationBarColor">@color/color_surface_main</item>
     </style>
 </resources>

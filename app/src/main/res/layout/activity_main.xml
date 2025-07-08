@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_main_layout"
+    android:background="@color/color_surface_main"
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -21,7 +21,7 @@
     <LinearLayout
         android:id="@+id/buttonContainer"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/buttons_container_height"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/buttons_container_indent"
         android:layout_marginBottom="@dimen/bottom_indent_8dp"
         android:orientation="horizontal"
@@ -32,18 +32,22 @@
         <Button
             android:id="@+id/category_button"
             style="@style/StyleNavButton"
+            android:paddingHorizontal="@dimen/button_horizontal_padding"
+            android:paddingVertical="@dimen/button_vertical_padding"
             android:layout_marginEnd="@dimen/half_button_indent"
             android:layout_weight="1"
             android:backgroundTint="@color/category_button_color"
-            android:text="@string/category_button_text" />
+            android:text="@string/title_categories" />
 
         <Button
             android:id="@+id/favorite_button"
             style="@style/StyleNavButton"
+            android:paddingHorizontal="@dimen/button_horizontal_padding"
+            android:paddingVertical="@dimen/button_vertical_padding"
             android:layout_marginStart="@dimen/half_button_indent"
             android:layout_weight="1"
             android:backgroundTint="@color/favorite_button_color"
-            android:text="@string/favorite_button_text"
+            android:text="@string/title_favorites"
             app:icon="@drawable/ic_heart_empty"
             app:iconGravity="textEnd" />
 

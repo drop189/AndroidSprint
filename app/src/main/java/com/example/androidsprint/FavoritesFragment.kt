@@ -9,7 +9,7 @@ import com.example.androidsprint.databinding.FragmentFavoritesBinding
 
 class FavoritesFragment: Fragment() {
     private var _binding: FragmentFavoritesBinding? = null
-    private val binding get() = _binding ?: throw IllegalStateException("")
+    private val binding get() = _binding ?: throw IllegalStateException("Binding can't be null")
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,5 +19,10 @@ class FavoritesFragment: Fragment() {
 
         _binding = FragmentFavoritesBinding.inflate(inflater,container,false)
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
