@@ -9,11 +9,12 @@
     <!--    Button      -->
     <dimen name="button_indent">4dp</dimen>
     <dimen name="half_button_indent">2dp</dimen>
+    <dimen name="button_horizontal_padding">20dp</dimen>
+    <dimen name="button_vertical_padding">10dp</dimen>
     <dimen name="nav_button_corner_radius">8dp</dimen>
 
     <!--    Button container    -->
     <dimen name="buttons_container_width">328dp</dimen>
-    <dimen name="buttons_container_height">36dp</dimen>
     <dimen name="buttons_container_indent">16dp</dimen>
 
     <!--    Main container    -->
