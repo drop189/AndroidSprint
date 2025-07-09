@@ -9,12 +9,31 @@
         <item name="android:textFontWeight">600</item>
     </style>
 
+    <style name="StyleTitle20" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/style_title_20_text_size</item>
+        <item name="android:fontFamily">@font/montserrat_alternates</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/title_text_color</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+
     <style name="StyleNavButton" parent="Widget.Material3.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">@dimen/padding_20dp</item>
+        <item name="android:paddingVertical">@dimen/padding_10dp</item>
         <item name="android:textAppearance">@style/StyleTitle14</item>
         <item name="autoSizeTextType">uniform</item>
-        <item name="cornerRadius">@dimen/nav_button_corner_radius</item>
+        <item name="cornerRadius">@dimen/main_corner_radius</item>
+    </style>
+
+    <style name="StyleTitleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/indent_16dp</item>
+        <item name="android:background">@drawable/title_bg</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+        <item name="android:textAppearance">@style/StyleTitle20</item>
     </style>
 
 </resources>
