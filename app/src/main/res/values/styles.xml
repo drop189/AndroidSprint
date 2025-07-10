@@ -3,18 +3,16 @@
 
     <style name="StyleTitle14" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/style_title_14_text_size</item>
-        <item name="android:fontFamily">@font/montserrat_alternates</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_semibold</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/button_text_color</item>
-        <item name="android:textFontWeight">600</item>
     </style>
 
     <style name="StyleTitle20" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/style_title_20_text_size</item>
-        <item name="android:fontFamily">@font/montserrat_alternates</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_semibold</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/title_text_color</item>
-        <item name="android:textFontWeight">600</item>
     </style>
 
     <style name="StyleNavButton" parent="Widget.Material3.Button">

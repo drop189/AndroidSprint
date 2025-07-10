@@ -12,18 +12,20 @@
         android:layout_height="@dimen/title_image_height">
 
         <ImageView
-            android:id="@+id/title_iv"
+            android:id="@+id/ivTitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="center"
+            android:contentDescription="@string/iv_title_content_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bcg_categories"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/backgrounds/scenic" />
+             />
 
         <TextView
-            android:id="@+id/title_tv"
+            android:id="@+id/tvTitle"
             style="@style/StyleTitleTextView"
             android:text="@string/title_categories"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,8 +37,7 @@
         android:id="@+id/rvCategories"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="@dimen/indent_8dp"
-        android:layout_marginVertical="@dimen/indent_8dp"
+        android:layout_margin="@dimen/indent_8dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         tools:itemCount="6"

@@ -21,8 +21,6 @@
     <dimen name="style_title_14_text_size">14sp</dimen>
     <dimen name="style_title_20_text_size">20sp</dimen>
 
-    <!--    Button    -->
-
     <!--    Button container    -->
     <dimen name="buttons_container_width">328dp</dimen>
 
