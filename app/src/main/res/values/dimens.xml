@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="bottom_indent_8dp">8dp</dimen>
+    <!--    Indent    -->
+    <dimen name="indent_2dp">2dp</dimen>
+    <dimen name="indent_4dp">4dp</dimen>
+    <dimen name="indent_8dp">8dp</dimen>
+    <dimen name="indent_16dp">16dp</dimen>
 
-    <!--    Text        -->
+    <!--    Padding    -->
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+
+    <!--    Corner Radius    -->
+    <dimen name="main_corner_radius">8dp</dimen>
+
+    <!--    Title    -->
+    <dimen name="title_image_height">224dp</dimen>
+
+    <!--    Text    -->
     <dimen name="style_title_14_text_size">14sp</dimen>
-
-    <!--    Button      -->
-    <dimen name="button_indent">4dp</dimen>
-    <dimen name="half_button_indent">2dp</dimen>
-    <dimen name="button_horizontal_padding">20dp</dimen>
-    <dimen name="button_vertical_padding">10dp</dimen>
-    <dimen name="nav_button_corner_radius">8dp</dimen>
+    <dimen name="style_title_20_text_size">20sp</dimen>
 
     <!--    Button container    -->
     <dimen name="buttons_container_width">328dp</dimen>
-    <dimen name="buttons_container_indent">16dp</dimen>
 
     <!--    Main container    -->
     <dimen name="main_container_height">0dp</dimen>
+
+    <!--    Card View    -->
+    <dimen name="card_view_height">220dp</dimen>
 </resources>

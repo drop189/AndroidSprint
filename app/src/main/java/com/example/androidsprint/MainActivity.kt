@@ -26,13 +26,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.categoryButton.setOnClickListener {
+        binding.btnCategory.setOnClickListener {
             supportFragmentManager.commit {
                 replace<CategoriesListFragment>(R.id.mainContainer)
                 setReorderingAllowed(true)
             }
         }
-        binding.favoriteButton.setOnClickListener {
+        binding.btnFavorite.setOnClickListener {
             supportFragmentManager.commit {
                 replace<FavoritesFragment>(R.id.mainContainer)
                 setReorderingAllowed(true)
