@@ -29,4 +29,5 @@
 
     <!--    Card View    -->
     <dimen name="card_view_height">220dp</dimen>
+    <dimen name="iv_title_card_height">130dp</dimen>
 </resources>

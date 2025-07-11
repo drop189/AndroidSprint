@@ -19,8 +19,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="@dimen/iv_title_card_height"
             android:contentDescription="@string/iv_card_content_description"
             android:scaleType="centerCrop"
             tools:layout_height="130dp"
