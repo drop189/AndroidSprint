@@ -18,7 +18,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/ivTitle"
+            android:id="@+id/ivTitleItemCategory"
             android:layout_width="match_parent"
             android:layout_height="@dimen/iv_title_card_height"
             android:contentDescription="@string/iv_card_content_description"
@@ -26,14 +26,14 @@
             tools:src="@drawable/burger" />
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvTitleItemCategory"
             style="@style/StyleCardTitleTextView"
             tools:layout_height="16dp"
             tools:layout_width="73dp"
             tools:text="Бургеры" />
 
         <TextView
-            android:id="@+id/tvDescription"
+            android:id="@+id/tvDescriptionItemCategory"
             style="@style/StyleCardDescriptionTextView"
             tools:layout_height="50dp"
             tools:layout_width="140dp"

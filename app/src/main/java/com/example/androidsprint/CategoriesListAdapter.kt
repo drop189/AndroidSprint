@@ -17,9 +17,9 @@ class CategoriesListAdapter(private val dataSet: List<Category>) :
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = ItemCategoryBinding.bind(itemView)
 
-        val imageView: ImageView = binding.ivTitle
-        val titleTextView: TextView = binding.tvTitle
-        val descriptionTextView: TextView = binding.tvDescription
+        val imageView: ImageView = binding.ivTitleItemCategory
+        val titleTextView: TextView = binding.tvTitleItemCategory
+        val descriptionTextView: TextView = binding.tvDescriptionItemCategory
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -32,24 +32,24 @@ class CategoriesListAdapter(private val dataSet: List<Category>) :
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        val id = dataSet[position].id
-        val title = dataSet[position].title
-        val imageUrl = dataSet[position].imageUrl
-        val description = dataSet[position].description
+        val category = dataSet[position]
 
         val drawable = try {
             val context = viewHolder.itemView.context
-            val inputStream = context.assets.open(imageUrl)
-            Drawable.createFromStream(inputStream, imageUrl)
+            context.assets.open(category.imageUrl).use { inputStream ->
+                Drawable.createFromStream(inputStream, category.imageUrl)
+            }
         } catch (e: Exception) {
-            Log.i("Id", id.toString())
+            Log.i("Id", category.id.toString())
             Log.e("Error", e.stackTraceToString())
             null
         }
 
-        viewHolder.titleTextView.text = title
-        viewHolder.imageView.setImageDrawable(drawable)
-        viewHolder.descriptionTextView.text = description
+        with(viewHolder) {
+            titleTextView.text = category.title
+            imageView.setImageDrawable(drawable)
+            descriptionTextView.text = category.description
+        }
     }
 
     override fun getItemCount() = dataSet.size
