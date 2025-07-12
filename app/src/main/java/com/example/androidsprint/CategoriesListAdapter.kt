@@ -7,16 +7,27 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidsprint.databinding.ItemCategoryBinding
 import com.example.androidsprint.entity.Category
 
 class CategoriesListAdapter(private val dataSet: List<Category>) :
     RecyclerView.Adapter<CategoriesListAdapter.ViewHolder>() {
+    interface OnItemClickListener {
+        fun onItemClick()
+    }
+
+    private var itemClickListener: OnItemClickListener? = null
+
+    fun setOnItemClickListener(listener: OnItemClickListener){
+        itemClickListener = listener
+    }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = ItemCategoryBinding.bind(itemView)
 
+        val cardView: CardView = binding.cvItemCategory
         val imageView: ImageView = binding.ivTitleItemCategory
         val titleTextView: TextView = binding.tvTitleItemCategory
         val descriptionTextView: TextView = binding.tvDescriptionItemCategory
@@ -49,6 +60,7 @@ class CategoriesListAdapter(private val dataSet: List<Category>) :
             titleTextView.text = category.title
             imageView.setImageDrawable(drawable)
             descriptionTextView.text = category.description
+            cardView.setOnClickListener { itemClickListener?.onItemClick() }
         }
     }
 

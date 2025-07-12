@@ -5,6 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
+import com.example.androidsprint.CategoriesListAdapter.OnItemClickListener
 import com.example.androidsprint.databinding.FragmentListCategoriesBinding
 
 class CategoriesListFragment : Fragment() {
@@ -27,7 +30,20 @@ class CategoriesListFragment : Fragment() {
     }
 
     private fun initRecycler() {
-        binding.rvCategories.adapter =
-            CategoriesListAdapter(STUB.getCategories())
+        val adapter = CategoriesListAdapter(STUB.getCategories())
+
+        binding.rvCategories.adapter = adapter
+
+        adapter.setOnItemClickListener(object : OnItemClickListener {
+            override fun onItemClick() {
+                openRecipesByCategoryId()
+            }
+        })
+    }
+
+    private fun openRecipesByCategoryId() {
+        parentFragmentManager.commit {
+            replace<RecipesListFragment>(R.id.mainContainer)
+        }
     }
 }
