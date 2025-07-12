@@ -12,7 +12,7 @@
         android:layout_height="@dimen/title_image_height">
 
         <ImageView
-            android:id="@+id/ivTitle"
+            android:id="@+id/ivTitleListCategory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/iv_title_content_description"
@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvTitleListCategory"
             style="@style/StyleTitleTextView"
             android:text="@string/title_categories"
             app:layout_constraintBottom_toBottomOf="parent"
