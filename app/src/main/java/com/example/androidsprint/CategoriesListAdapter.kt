@@ -15,12 +15,12 @@ import com.example.androidsprint.entity.Category
 class CategoriesListAdapter(private val dataSet: List<Category>) :
     RecyclerView.Adapter<CategoriesListAdapter.ViewHolder>() {
     interface OnItemClickListener {
-        fun onItemClick()
+        fun onItemClick(id: Int)
     }
 
     private var itemClickListener: OnItemClickListener? = null
 
-    fun setOnItemClickListener(listener: OnItemClickListener){
+    fun setOnItemClickListener(listener: OnItemClickListener) {
         itemClickListener = listener
     }
 
@@ -60,7 +60,7 @@ class CategoriesListAdapter(private val dataSet: List<Category>) :
             titleTextView.text = category.title
             imageView.setImageDrawable(drawable)
             descriptionTextView.text = category.description
-            cardView.setOnClickListener { itemClickListener?.onItemClick() }
+            cardView.setOnClickListener { itemClickListener?.onItemClick(category.id) }
         }
     }
 
