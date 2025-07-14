@@ -14,13 +14,13 @@ import com.example.androidsprint.entity.Category
 
 class CategoriesListAdapter(private val dataSet: List<Category>) :
     RecyclerView.Adapter<CategoriesListAdapter.ViewHolder>() {
-    interface OnItemClickListener {
-        fun onItemClick(id: Int)
+    interface OnItemCategoryClickListener {
+        fun onItemClick(categoryId: Int)
     }
 
-    private var itemClickListener: OnItemClickListener? = null
+    private var itemClickListener: OnItemCategoryClickListener? = null
 
-    fun setOnItemClickListener(listener: OnItemClickListener) {
+    fun setOnItemClickListener(listener: OnItemCategoryClickListener) {
         itemClickListener = listener
     }
 

@@ -8,7 +8,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.example.androidsprint.CategoriesListAdapter.OnItemClickListener
+import com.example.androidsprint.CategoriesListAdapter.OnItemCategoryClickListener
 import com.example.androidsprint.Constants.ARG_CATEGORY_ID
 import com.example.androidsprint.Constants.ARG_CATEGORY_IMAGE_URL
 import com.example.androidsprint.Constants.ARG_CATEGORY_NAME
@@ -44,9 +44,9 @@ class CategoriesListFragment : Fragment() {
 
         binding.rvCategories.adapter = adapter
 
-        adapter.setOnItemClickListener(object : OnItemClickListener {
-            override fun onItemClick(id: Int) {
-                openRecipesByCategoryId(id)
+        adapter.setOnItemClickListener(object : OnItemCategoryClickListener {
+            override fun onItemClick(categoryId: Int) {
+                openRecipesByCategoryId(categoryId)
             }
         })
     }
