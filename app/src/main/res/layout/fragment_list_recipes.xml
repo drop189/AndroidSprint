@@ -31,14 +31,12 @@
             tools:text="Рецепты" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/indent_8dp"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="8"
         tools:listitem="@layout/item_recipe" />
 
