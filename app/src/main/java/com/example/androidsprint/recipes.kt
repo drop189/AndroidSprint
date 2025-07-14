@@ -272,4 +272,11 @@ object STUB {
         0 -> burgerRecipes
         else -> emptyList()
     }
+
+    fun getRecipeById(recipeId: Int): Recipe? {
+        val recipe = burgerRecipes.find { recipe ->
+            recipe.id == recipeId
+        }
+        return recipe
+    }
 }
