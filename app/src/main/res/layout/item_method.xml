@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/indent_12dp">
+
+    <TextView
+        android:id="@+id/tvMethod"
+        style="@style/StyleDescription14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        tools:text="1. В глубокой миске смешайте говяжий фарш, лук, чеснок, соль и перец.
+        Разделите фарш на 4 равные части и сформируйте котлеты." />
+
+</LinearLayout>
