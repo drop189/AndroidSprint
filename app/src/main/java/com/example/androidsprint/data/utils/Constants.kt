@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.data.utils
 
 object Constants {
     const val ARG_RECIPE = "ARG_RECIPE"

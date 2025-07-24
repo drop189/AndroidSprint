@@ -15,11 +15,17 @@
         <item name="android:textColor">@color/title_text_color</item>
     </style>
 
+    <style name="StyleDescription14" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/style_title_14_text_size</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/description_text_color</item>
+    </style>
+
     <style name="StyleNavButton" parent="Widget.Material3.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingHorizontal">@dimen/padding_20dp</item>
-        <item name="android:paddingVertical">@dimen/padding_10dp</item>
+        <item name="android:paddingHorizontal">@dimen/indent_20dp</item>
+        <item name="android:paddingVertical">@dimen/indent_10dp</item>
         <item name="android:textAppearance">@style/StyleTitle14</item>
         <item name="autoSizeTextType">uniform</item>
         <item name="cornerRadius">@dimen/main_corner_radius</item>
@@ -30,7 +36,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/indent_16dp</item>
         <item name="android:background">@drawable/title_bg</item>
-        <item name="android:padding">@dimen/padding_10dp</item>
+        <item name="android:padding">@dimen/indent_10dp</item>
         <item name="android:textAppearance">@style/StyleTitle20</item>
     </style>
 

@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.ui.fragments
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -10,11 +10,14 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.example.androidsprint.Constants.ARG_CATEGORY_ID
-import com.example.androidsprint.Constants.ARG_CATEGORY_IMAGE_URL
-import com.example.androidsprint.Constants.ARG_CATEGORY_NAME
-import com.example.androidsprint.Constants.ARG_RECIPE
-import com.example.androidsprint.RecipesListAdapter.OnItemRecipeClickListener
+import com.example.androidsprint.R
+import com.example.androidsprint.ui.adapters.RecipesListAdapter
+import com.example.androidsprint.data.utils.Constants.ARG_CATEGORY_ID
+import com.example.androidsprint.data.utils.Constants.ARG_CATEGORY_IMAGE_URL
+import com.example.androidsprint.data.utils.Constants.ARG_CATEGORY_NAME
+import com.example.androidsprint.data.utils.Constants.ARG_RECIPE
+import com.example.androidsprint.ui.adapters.RecipesListAdapter.OnItemRecipeClickListener
+import com.example.androidsprint.data.stubs.STUB
 import com.example.androidsprint.databinding.FragmentListRecipesBinding
 
 class RecipesListFragment : Fragment() {

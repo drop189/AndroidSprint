@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.ui.adapters
 
 import android.graphics.drawable.Drawable
 import android.util.Log
@@ -9,8 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidsprint.R
 import com.example.androidsprint.databinding.ItemCategoryBinding
-import com.example.androidsprint.entity.Category
+import com.example.androidsprint.model.entity.Category
 
 class CategoriesListAdapter(private val dataSet: List<Category>) :
     RecyclerView.Adapter<CategoriesListAdapter.ViewHolder>() {

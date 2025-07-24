@@ -2,6 +2,8 @@
     <string name="app_name">AndroidSprint</string>
     <string name="title_categories">Категории</string>
     <string name="title_favorites">Избранное</string>
+    <string name="title_ingredients">Ингредиенты</string>
+    <string name="title_method">Способ приготовления</string>
     <string name="iv_title_category_content_description">Background image for category title</string>
     <string name="iv_title_recipe_content_description">Background image for recipe title</string>
     <string name="iv_card_category_content_description">Background image for card category title</string>

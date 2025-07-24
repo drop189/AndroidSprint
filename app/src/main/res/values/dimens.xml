@@ -5,11 +5,10 @@
     <dimen name="indent_2dp">2dp</dimen>
     <dimen name="indent_4dp">4dp</dimen>
     <dimen name="indent_8dp">8dp</dimen>
+    <dimen name="indent_10dp">10dp</dimen>
+    <dimen name="indent_12dp">12dp</dimen>
     <dimen name="indent_16dp">16dp</dimen>
-
-    <!--    Padding    -->
-    <dimen name="padding_10dp">10dp</dimen>
-    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="indent_20dp">20dp</dimen>
 
     <!--    Corner Radius    -->
     <dimen name="main_corner_radius">8dp</dimen>
