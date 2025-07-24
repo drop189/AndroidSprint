@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.ui.fragments
 
 import android.os.Build
 import android.os.Bundle
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.androidsprint.Constants.ARG_RECIPE
+import com.example.androidsprint.data.utils.Constants.ARG_RECIPE
 import com.example.androidsprint.databinding.FragmentRecipeBinding
-import com.example.androidsprint.entity.Recipe
+import com.example.androidsprint.model.entity.Recipe
 
 class RecipeFragment : Fragment() {
 

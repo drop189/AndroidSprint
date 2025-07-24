@@ -1,8 +1,8 @@
-package com.example.androidsprint
+package com.example.androidsprint.data.stubs
 
-import com.example.androidsprint.entity.Category
-import com.example.androidsprint.entity.Ingredient
-import com.example.androidsprint.entity.Recipe
+import com.example.androidsprint.model.entity.Category
+import com.example.androidsprint.model.entity.Ingredient
+import com.example.androidsprint.model.entity.Recipe
 
 object STUB {
     private val categories: List<Category> = listOf(

@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

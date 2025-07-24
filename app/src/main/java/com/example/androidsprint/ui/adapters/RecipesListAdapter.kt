@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.ui.adapters
 
 import android.graphics.drawable.Drawable
 import android.util.Log
@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidsprint.R
 import com.example.androidsprint.databinding.ItemRecipeBinding
-import com.example.androidsprint.entity.Recipe
+import com.example.androidsprint.model.entity.Recipe
 
 class RecipesListAdapter(private val dataSet: List<Recipe>) :
     RecyclerView.Adapter<RecipesListAdapter.ViewHolder>() {

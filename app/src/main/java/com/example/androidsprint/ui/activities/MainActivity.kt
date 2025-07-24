@@ -1,4 +1,4 @@
-package com.example.androidsprint
+package com.example.androidsprint.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.example.androidsprint.ui.fragments.CategoriesListFragment
+import com.example.androidsprint.ui.fragments.FavoritesFragment
+import com.example.androidsprint.R
 import com.example.androidsprint.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
